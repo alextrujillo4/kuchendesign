@@ -19,8 +19,22 @@
         <link href="static/plugin/themify-icons/themify-icons.css" rel="stylesheet">
         <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
         <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet">
+        <link href="static/style/main.css" rel="stylesheet">
+
         <!-- theme css -->
         <link href="static/style/master.css" rel="stylesheet">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="/__/firebase/7.1.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <!-- Initialize Firebase -->
+        <script src="/__/firebase/7.1.0/firebase-app.js"></script>
+        <script src="/__/firebase/init.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
     </head>
 
     <!-- Body Start -->
@@ -52,6 +66,7 @@
                             <li><a class="nav-link" href="contact.html">Contacto</a></li>
                         </ul>
                     </div>
+
                     <div class="extra-menu d-flex align-items-center">
                         <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar-collapse-toggle" aria-expanded="false">
                             <span class="icon-bar"></span>
@@ -85,7 +100,7 @@
 
             <!-- Feature Box -->
             <section class="section gray-bg">
-                <div class="container">
+                <div class="container" >
                     <div class="row justify-content-center sm-m-25px-b m-45px-b">
                         <div class="col-md-12 col-lg-8">
                             <div class="section-title text-center">
@@ -134,132 +149,26 @@
             <!-- Feature Box -->
 
             <!-- Work -->
-            <section class="section p-0px-b">
-                <div class="container">
-                    <div class="row justify-content-center sm-m-30px-b m-60px-b">
-                        <div class="col-md-12 col-lg-8">
-                            <div class="section-title text-center">
-                                <h2 class="dark-color font-alt">Latest <mark>Works</mark></h2>
-                                <p class="m-0px large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                            </div>        
-                        </div>
+            <section class="section product-section" style="display: flex;">
+                <div class="container container-large">
+                    <div class="portfolio-filter-01 m-30px-b">
+                        <ul id="myfilter" class="filter justify-content-center nav">
+                            <li class="active" data-filter="*">All</li>
+
+                        </ul>
                     </div>
-                </div>
-                <div class="container-fluid p-0px">
-                    <div class="portfolio-content grid-col-4 lightbox-gallery">
-                        <div class="grid-item product branding">
-                            <div class="portfolio-box-01">
-                                <div class="portfolio-img">
-                                    <img src="static/img/767x767.jpg" title="" alt="">
-                                </div>
-                                <div class="portfolio-info">
-                                        <a href="static/img/767x767.jpg" class="gallery-link">
-                                            <i></i>
-                                        </a>
-                                        <h5><a href="#">Our Photography</a></h5>
-                                </div>
-                            </div>
-                        </div> <!-- grid item -->
-                        <div class="grid-item photoshop">
-                            <div class="portfolio-box-01">
-                                <div class="portfolio-img">
-                                    <img src="static/img/767x767.jpg" title="" alt="">
-                                </div>
-                                <div class="portfolio-info">
-                                        <a href="static/img/767x767.jpg" class="gallery-link">
-                                            <i></i>
-                                        </a>
-                                        <h5><a href="#">Our Photography</a></h5>
-                                </div>
-                            </div>
-                        </div> <!-- grid item -->
-                        <div class="grid-item product fashion">
-                            <div class="portfolio-box-01">
-                                <div class="portfolio-img">
-                                    <img src="static/img/767x767.jpg" title="" alt="">
-                                </div>
-                                <div class="portfolio-info">
-                                        <a href="static/img/767x767.jpg" class="gallery-link">
-                                            <i></i>
-                                        </a>
-                                        <h5><a href="#">Our Photography</a></h5>
-                                </div>
-                            </div>
-                        </div> <!-- grid item -->
-                        <div class="grid-item photoshop">
-                            <div class="portfolio-box-01">
-                                <div class="portfolio-img">
-                                    <img src="static/img/767x767.jpg" title="" alt="">
-                                </div>
-                                <div class="portfolio-info">
-                                        <a href="static/img/767x767.jpg" class="gallery-link">
-                                            <i></i>
-                                        </a>
-                                        <h5><a href="#">Our Photography</a></h5>
-                                </div>
-                            </div>
-                        </div> <!-- grid item -->
-                        <div class="grid-item product fashion">
-                            <div class="portfolio-box-01">
-                                <div class="portfolio-img">
-                                    <img src="static/img/767x767.jpg" title="" alt="">
-                                </div>
-                                <div class="portfolio-info">
-                                        <a href="static/img/767x767.jpg" class="gallery-link">
-                                            <i></i>
-                                        </a>
-                                        <h5><a href="#">Our Photography</a></h5>
-                                </div>
-                            </div>
-                        </div> <!-- grid item -->
-                        <div class="grid-item branding">
-                            <div class="portfolio-box-01">
-                                <div class="portfolio-img">
-                                    <img src="static/img/767x767.jpg" title="" alt="">
-                                </div>
-                                <div class="portfolio-info">
-                                        <a href="static/img/767x767.jpg" class="gallery-link">
-                                            <i></i>
-                                        </a>
-                                        <h5><a href="#">Our Photography</a></h5>
-                                </div>
-                            </div>
-                        </div> <!-- grid item -->
-                        <div class="grid-item branding">
-                            <div class="portfolio-box-01">
-                                <div class="portfolio-img">
-                                    <img src="static/img/767x767.jpg" title="" alt="">
-                                </div>
-                                <div class="portfolio-info">
-                                        <a href="static/img/767x767.jpg" class="gallery-link">
-                                            <i></i>
-                                        </a>
-                                        <h5><a href="#">Our Photography</a></h5>
-                                </div>
-                            </div>
-                        </div> <!-- grid item -->
-                        <div class="grid-item branding">
-                            <div class="portfolio-box-01">
-                                <div class="portfolio-img">
-                                    <img src="static/img/767x767.jpg" title="" alt="">
-                                </div>
-                                <div class="portfolio-info">
-                                        <a href="static/img/767x767.jpg" class="gallery-link">
-                                            <i></i>
-                                        </a>
-                                        <h5><a href="#">Our Photography</a></h5>
-                                </div>
-                            </div>
-                        </div> <!-- grid item -->
-                    </div> <!-- portfolio-content -->
+
+                    <ul id="myproducgalery" class="portfolio-content grid-gutter-md grid-col-3 lightbox-gallery">
+                    </ul> <!-- portfolio-content -->
+
                 </div>
             </section>
             <!-- End work -->
 
             <!-- Awards -->
-            <section class="section gray-bg">
-                <div class="container">
-                    <div class="row align-items-center">
+            <section class="section gray-bg section-contentbelow"  >
+                <div class="container" >
+                    <div class="row align-items-center" >
                         <div class="col-lg-6 md-p-15px-r p-70px-r md-m-30px-b">
                             <div class="section-title">
                                 <h2 class="dark-color font-alt">Awards For <mark>Design</mark></h2>
@@ -670,7 +579,6 @@
             <!-- End Blog -->
         </main>
         <!-- main end -->
-
         <!-- Footer-->
         <footer class="footer footer-dark">
             <div class="footer-top">
@@ -782,6 +690,7 @@
 
         <!-- custom js -->
         <script src="static/js/custom.js"></script>
+        <script src="static/js/database.js"></script>
         <!-- end -->
 
         <!-- end body -->
